@@ -145,9 +145,9 @@ import { CommonModule } from '@angular/common';
 })
 export class HeroComponent implements OnInit, OnDestroy {
   images: string[] = [
-    '../../assets/hero1.jpg.jpg',
-    '../../assets/hero2.jpg.jpg',
-    '../../assets/hero1.jpg.jpg'
+    'assets/hero1.jpg',
+    'assets/hero2.jpg',
+    'assets/hero3.jpg'
   ];
   currentIndex = 0;
   intervalId: any;
