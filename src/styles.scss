@@ -84,6 +84,24 @@ button:active, .btn:active { transform: translateY(0); }
   pointer-events: none;
 }
 
+.hero ul li {
+  display: flex;
+  align-items: flex-start;
+  /* make icon align at top */
+  gap: 0.6rem;
+  flex: 1 1 200px;
+  /* allow wrapping into columns */
+  min-width: 160px;
+  /* prevent text cramping under icon */
+}
+
+.hero ul li img {
+  flex-shrink: 0;
+  /* stop icon from shrinking */
+  margin-top: 3px;
+  /* small adjustment for vertical alignment */
+}
+
 .header {
   position: sticky;
   top: 0;
