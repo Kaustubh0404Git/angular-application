@@ -1,0 +1,236 @@
+/*!***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].rules[0].oneOf[0].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].rules[0].oneOf[0].use[2]!./node_modules/resolve-url-loader/index.js??ruleSet[1].rules[6].rules[1].use[0]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[6].rules[1].use[1]!./src/styles.scss?ngGlobalStyle ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/* Global styles and CSS variables */
+:root {
+  --bg: #0b1220;
+  --surface: #0f1b31;
+  --surface-2: #13203a;
+  --text: #e6eefc;
+  --muted: #9bb1d0;
+  --brand: #5ac8fa;
+  --brand-2: #4f46e5;
+  --accent: #22d3ee;
+  --ok: #22c55e;
+  --warn: #f59e0b;
+  --danger: #ef4444;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+  color: var(--text);
+  background: linear-gradient(180deg, var(--bg), #0b1027) fixed;
+}
+
+.container {
+  width: min(1100px, 92%);
+  margin-inline: auto;
+}
+
+h1, h2, h3 {
+  line-height: 1.15;
+  margin: 0 0 0.6rem;
+}
+
+p {
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+button, .btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: linear-gradient(135deg, var(--brand), var(--brand-2));
+  color: white;
+  padding: 0.85rem 1.1rem;
+  border: 0;
+  border-radius: 999px;
+  font-weight: 700;
+  cursor: pointer;
+  text-decoration: none;
+  box-shadow: 0 10px 30px rgba(79, 70, 229, 0.25);
+  transition: transform 0.15s ease, box-shadow 0.15s ease, opacity 0.2s ease;
+}
+
+button:hover, .btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 12px 36px rgba(79, 70, 229, 0.35);
+}
+
+button:active, .btn:active {
+  transform: translateY(0);
+}
+
+.card {
+  background: linear-gradient(180deg, var(--surface), var(--surface-2));
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 18px;
+  padding: 1.25rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+.grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.grid.cols-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid.cols-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.section {
+  padding: 4rem 0;
+}
+
+.hero-bg {
+  position: relative;
+  overflow: clip;
+  background: radial-gradient(1200px 600px at 80% -10%, rgba(34, 211, 238, 0.24), transparent), radial-gradient(900px 600px at -10% 30%, rgba(90, 200, 250, 0.2), transparent);
+}
+
+.hero-bg::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url('banner.svg') right center/contain no-repeat;
+  opacity: 0.9;
+  pointer-events: none;
+}
+
+.hero ul li {
+  display: flex;
+  align-items: flex-start;
+  /* make icon align at top */
+  gap: 0.6rem;
+  flex: 1 1 200px;
+  /* allow wrapping into columns */
+  min-width: 160px;
+  /* prevent text cramping under icon */
+}
+
+.hero ul li img {
+  flex-shrink: 0;
+  /* stop icon from shrinking */
+  margin-top: 3px;
+  /* small adjustment for vertical alignment */
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  background: rgba(11, 17, 32, 0.65);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+nav a {
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 600;
+  opacity: 0.9;
+}
+
+nav a:hover {
+  opacity: 1;
+}
+
+nav ul {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-weight: 900;
+  letter-spacing: 0.2px;
+}
+
+.kicker {
+  display: inline-block;
+  padding: 0.3rem 0.6rem;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.04);
+  font-size: 0.8rem;
+  color: var(--accent);
+  font-weight: 700;
+}
+
+footer {
+  background: #0a1021;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.input, input, select, textarea {
+  width: 100%;
+  padding: 0.9rem 1rem;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.02);
+  color: var(--text);
+  outline: none;
+}
+
+label {
+  font-weight: 600;
+  display: block;
+  margin-bottom: 0.35rem;
+}
+
+.form-row {
+  display: grid;
+  gap: 1rem;
+}
+
+.form-row.two {
+  grid-template-columns: 1fr 1fr;
+}
+
+.error {
+  color: var(--danger);
+  font-size: 0.85rem;
+}
+
+@media (max-width: 900px) {
+  .grid.cols-3 {
+    grid-template-columns: 1fr 1fr;
+  }
+  .form-row.two {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 640px) {
+  .grid.cols-3, .grid.cols-2 {
+    grid-template-columns: 1fr;
+  }
+  .hero-bg::after {
+    opacity: 0.35;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map*/
